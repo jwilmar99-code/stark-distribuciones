@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo | Stark Distribuciones</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      background: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background: #000;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 26px;
+    }
+    .catalogo {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 0 15px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .producto {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .producto img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+    .producto .info {
+      padding: 15px;
+      flex: 1;
+    }
+    .producto h3 {
+      margin: 0 0 8px;
+      font-size: 18px;
+    }
+    .producto p {
+      font-size: 14px;
+      margin: 0 0 12px;
+      color: #666;
+    }
+    .precio {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .btn {
+      text-align: center;
+      padding: 12px;
+      background: #25D366;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 0 0 12px 12px;
+    }
+    .btn:hover {
+      background: #1ebe5d;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Catálogo Stark Distribuciones</h1>
+  <p>Productos destacados</p>
+</header>
+
+<section class="catalogo">
+
+  <!-- PRODUCTO 1 -->
+  <div class="producto">
+    <img src="imagenes/producto1.jpg" alt="Producto 1">
+    <div class="info">
+      <h3>Producto Ejemplo 1</h3>
+      <p>Descripción corta del producto más relevante.</p>
+      <div class="precio">$25.000</div>
+    </div>
+    <a class="btn" href="https://wa.me/573193173268?text=Hola,%20me%20interesa%20el%20Producto%201" target="_blank">Pedir por WhatsApp</a>
+  </div>
+
+  <!-- PRODUCTO 2 -->
+  <div class="producto">
+    <img src="imagenes/producto2.jpg" alt="Producto 2">
+    <div class="info">
+      <h3>Producto Ejemplo 2</h3>
+      <p>Descripción corta del producto más relevante.</p>
+      <div class="precio">$32.000</div>
+    </div>
+    <a class="btn" href="https://wa.me/573193173268?text=Hola,%20me%20interesa%20el%20Producto%202" target="_blank">Pedir por WhatsApp</a>
+  </div>
+
+  <!-- PRODUCTO 3 -->
+  <div class="producto">
+    <img src="imagenes/producto3.jpg" alt="Producto 3">
+    <div class="info">
+      <h3>Producto Ejemplo 3</h3>
+      <p>Descripción corta del producto más relevante.</p>
+      <div class="precio">$18.000</div>
+    </div>
+    <a class="btn" href="https://wa.me/573193173268?text=Hola,%20me%20interesa%20el%20Producto%203" target="_blank">Pedir por WhatsApp</a>
+  </div>
+
+</section>
+
+<footer>
+  © 2026 Stark Distribuciones · Catálogo digital
+</footer>
+
+</body>
+</html>
