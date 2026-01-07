@@ -52,7 +52,6 @@
       border-radius: 20px;
     }
 
-    /* FILTROS */
     .filtros {
       display: flex;
       justify-content: center;
@@ -69,10 +68,6 @@
       cursor: pointer;
       background: #5A2D82;
       color: white;
-    }
-
-    .filtros button:hover {
-      background: #E56AA6;
     }
 
     .catalogo {
@@ -92,19 +87,12 @@
       flex-direction: column;
       box-shadow: 0 8px 20px rgba(0,0,0,0.12);
       border: 2px solid #e0d2ef;
-      transition: transform 0.25s ease;
-    }
-
-    .producto:hover {
-      transform: translateY(-5px);
     }
 
     .producto img {
       width: 100%;
-      height: auto;
       max-height: 260px;
       object-fit: contain;
-      background: #fff;
       padding: 15px;
     }
 
@@ -135,20 +123,13 @@
     }
 
     .btn {
-      text-align: center;
       padding: 14px;
       background: linear-gradient(135deg, #5A2D82, #E56AA6);
       color: white;
       text-decoration: none;
       font-weight: bold;
-      border-radius: 0 0 18px 18px;
-    }
-
-    footer {
       text-align: center;
-      padding: 25px 10px;
-      font-size: 13px;
-      color: #777;
+      border-radius: 0 0 18px 18px;
     }
   </style>
 </head>
@@ -164,13 +145,12 @@
   <a href="index.html">⬅ Volver a Stark Distribuciones</a>
 </div>
 
-<!-- FILTROS -->
 <div class="filtros">
   <button onclick="filtrar('todos')">Todos</button>
-  <button onclick="filtrar('hidratantes')">🧼 Hidratantes</button>
-  <button onclick="filtrar('serums')">🥫 Serums</button>
+  <button onclick="filtrar('hidratantes')">💧 Hidratantes</button>
+  <button onclick="filtrar('serums')">🧪 Serums</button>
   <button onclick="filtrar('bloqueadores')">🛡 Bloqueadores</button>
-  <button onclick="filtrar('tonicos')">🧃 Tónicos</button>
+  <button onclick="filtrar('tonicos')">🌿 Tónicos</button>
 </div>
 
 <section class="catalogo">
@@ -180,7 +160,11 @@
     <img src="vitaminac.jpg" alt="Vitamina C">
     <div class="info">
       <h3>Vitamina C</h3>
-      <p>Serum facial antioxidante formulado con vitamina C & E, es capaz de neutralizar los radicales. Con alto contenido de extracto de aloe vera, extracto de hamamelis y extracto de caléndula que ayudan a reparar la piel del deterioro ocasionado por el maquillaje y la exposición al sol.</p>
+      <p>
+        ✨ Ilumina la piel<br>
+        🛡️ Antioxidante<br>
+        🌿 Con aloe y caléndula
+      </p>
       <div class="precio">$40.000</div>
     </div>
     <a class="btn" href="https://wa.me/573193173268?text=Hola,%20me%20interesa%20la%20Vitamina%20C" target="_blank">Pedir por WhatsApp</a>
@@ -190,7 +174,11 @@
     <img src="niacinamida.jpg" alt="Niacinamida">
     <div class="info">
       <h3>Niacinamida</h3>
-      <p>Niacinamida también es conocida como Vitamina B3, actúa como coenzima en la producción de energía en las células y en la reparación del ADN celular, además de la homeostasis de la piel. Regula la producción de sebo..</p>
+      <p>
+        🧬 Regula grasa<br>
+        ✨ Mejora textura<br>
+        🔬 Vitamina B3
+      </p>
       <div class="precio">$48.000</div>
     </div>
     <a class="btn" href="https://wa.me/573193173268?text=Hola,%20me%20interesa%20la%20Niacinamida" target="_blank">Pedir por WhatsApp</a>
@@ -200,7 +188,11 @@
     <img src="retinol.jpg" alt="Retinol">
     <div class="info">
       <h3>Retinol</h3>
-      <p>Este activo revolucionario aclara y rejuvenece. Estimula colágeno, mejora elasticidad, aporta luminosidad y tiene poder antioxidante. Nuestra fórmula sin efectos secundarios.</p>
+      <p>
+        🔁 Rejuvenece la piel<br>
+        💪 Estimula colágeno<br>
+        ✨ Más firme y luminosa
+      </p>
       <div class="precio">$48.000</div>
     </div>
     <a class="btn" href="https://wa.me/573193173268?text=Hola,%20me%20interesa%20el%20Retinol" target="_blank">Pedir por WhatsApp</a>
@@ -208,13 +200,17 @@
 
   <!-- HIDRATANTES -->
   <div class="producto hidratantes">
-    <img src="hydraplus.jpg" alt="Hidratante">
+    <img src="hydraplus.jpg" alt="Hydra Plus">
     <div class="info">
       <h3>Hydra Plus</h3>
-      <p>Hidratación profunda con efecto anti-edad.</p>
+      <p>
+        💧 Hidratación profunda<br>
+        ⏳ Efecto anti-edad<br>
+        ✨ Piel suave y fresca
+      </p>
       <div class="precio">$42.000</div>
     </div>
-    <a class="btn" href="https://wa.me/573193173268?text=Hola,%20me%20interesa%20el%20Hidratante" target="_blank">Pedir por WhatsApp</a>
+    <a class="btn" href="https://wa.me/573193173268?text=Hola,%20me%20interesa%20Hydra%20Plus" target="_blank">Pedir por WhatsApp</a>
   </div>
 
   <!-- TONICOS -->
@@ -222,7 +218,11 @@
     <img src="despigmentante.jpg" alt="Tónico Facial">
     <div class="info">
       <h3>Tónico Facial</h3>
-      <p>Tónico despigmentante con extractos botánicos que generar actividad blanqueante y antioxidante. Reduce todo tipo de manchas faciales, como las producidas por el sol, el acné o cambios hormonales. Empareja el tono de la piel haciéndola lucir más joven, además controla la producción excesiva de grasa facial.</p>
+      <p>
+        🌿 Despigmentante<br>
+        🎯 Unifica el tono<br>
+        🧼 Controla grasa
+      </p>
       <div class="precio">$35.000</div>
     </div>
     <a class="btn" href="https://wa.me/573193173268?text=Hola,%20me%20interesa%20el%20Tónico" target="_blank">Pedir por WhatsApp</a>
@@ -233,7 +233,11 @@
     <img src="eucerin.jpg" alt="Bloqueador Solar">
     <div class="info">
       <h3>Bloqueador Solar</h3>
-      <p>Protección UVA/UVB de amplio espectro.</p>
+      <p>
+        ☀️ Protección UVA/UVB<br>
+        🛡️ Uso diario<br>
+        🌊 Textura ligera
+      </p>
       <div class="precio">$120.000</div>
     </div>
     <a class="btn" href="https://wa.me/573193173268?text=Hola,%20me%20interesa%20el%20Bloqueador%20Solar" target="_blank">Pedir por WhatsApp</a>
@@ -241,28 +245,17 @@
 
 </section>
 
-<footer>
-  © 2026 Stark Distribuciones · Catálogo digital
-</footer>
-
 <script>
 function filtrar(categoria) {
   const productos = document.querySelectorAll('.producto');
-
   productos.forEach(producto => {
-    if (categoria === 'todos') {
-      producto.style.display = 'flex';
-    } else {
-      producto.style.display = producto.classList.contains(categoria)
+    producto.style.display =
+      categoria === 'todos' || producto.classList.contains(categoria)
         ? 'flex'
         : 'none';
-    }
   });
 }
 </script>
 
 </body>
 </html>
-
-
-
